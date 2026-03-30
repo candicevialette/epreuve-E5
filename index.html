@@ -1,105 +1,38 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candice Vialette - Portfolio BTS SIO E5 - Épuré</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <nav class="navbar">
-        <div class="container nav-content">
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#projets">Comptes Rendus E5</a></li>
-                <li><a href="#documents">Dossier Numérique</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home" class="hero-section hero-centered">
-        <div class="container hero-content text-center">
-            <img src="images/profil-candice.jpg" alt="Candice Vialette" class="profil-img">
-            <h1>Candice Vialette</h1>
-            <p class="subtitle">Étudiante en BTS SIO (SISR) - Support & Mise à disposition</p>
-            <div class="lang-switch">FR | EN</div>
-        </div>
-    </section>
-
-    <section class="boxed-content section-qui-suis-je">
-        <div class="container box-wrapper">
-            <h2>Qui suis-je ?</h2>
-            <div class="box-body text-justified">
-                <p>Je suis une étudiante curieuse et déterminée, et ma première année en BTS SIO a confirmé ma passion naissante pour les systèmes et les réseaux. J'ai particulièrement apprécié les aspects pratiques de la formation : concevoir des architectures, déployer des services et sécuriser l'infrastructure.</p>
-                <p>Ce portfolio numérique est mon support d'audit officiel pour l'épreuve E5 (Coefficient 4).</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projets" class="boxed-content realisations-section">
-        <div class="container box-wrapper">
-            <h2>Comptes Rendus Techniques (E5)</h2>
-            <div class="box-body">
-                <p>Ces dossiers techniques documentent les compétences mobilisées lors de mes projets majeurs.</p>
+<section id="projets" class="boxed-content realisations-section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 40px;">Comptes Rendus Techniques (E5)</h2>
+            
+            <div class="competence-bloc">
+                <h3 class="competence-titre">Gérer le patrimoine informatique</h3>
+                <ul class="competence-liste">
+                    <li><i class="fas fa-caret-right"></i> Recenser et identifier les ressources numériques</li>
+                    <li><i class="fas fa-caret-right"></i> Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</li>
+                    <li><i class="fas fa-caret-right"></i> Mettre en place et vérifier les niveaux d’habilitation associés à un service</li>
+                    <li><i class="fas fa-caret-right"></i> Vérifier les conditions de la continuité d’un service informatique</li>
+                    <li><i class="fas fa-caret-right"></i> Gérer des sauvegardes</li>
+                    <li><i class="fas fa-caret-right"></i> Vérifier le respect des règles d’utilisation des ressources numériques</li>
+                </ul>
                 
-                <div class="projects-grid">
-                    
-                    <div class="project-card">
-                        <i class="fas fa-ticket-alt project-icon"></i> <h3>Mise en place Ticketing (GLPI)</h3>
-                        <p>Installation, configuration et déploiement de GLPI pour la gestion automatisée du parc et des incidents.</p>
-                        <div class="project-tags">
-                            <span class="tag tag-pink">Comp. 1, 2, 4, 5</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="fichiers/dossier-glpi-candice-vialette.pdf" target="_blank" class="btn btn-project btn-project-vieuxrose">Dossier Technique (PDF)</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <i class="fas fa-globe project-icon"></i>
-                        <h3>Serveur Web Sécurisé</h3>
-                        <p>Installation d'un serveur Web Linux Apache2 avec certificat SSL, BDD MySQL et configuration DNS.</p>
-                        <div class="project-tags">
-                            <span class="tag tag-mint">Comp. 3, 5</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="fichiers/dossier-web-candice-vialette.pdf" target="_blank" class="btn btn-project btn-project-vieuxrose">Dossier Technique (PDF)</a>
-                        </div>
-                    </div>
-
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="documents" class="boxed-content dossier-section">
-        <div class="container box-wrapper">
-            <h2>Dossier Numérique Obligatoire</h2>
-            <div class="box-body text-center">
-                <p>Accédez aux documents justificatifs pour l'audit de mon épreuve.</p>
-                <div class="docs-btns">
-                    <a href="fichiers/tableau-synthese-candice-vialette.pdf" target="_blank" class="btn btn-doc btn-doc-outline">
-                        <i class="fas fa-file-contract"></i> Tableau de Synthèse
-                    </a>
-                    <a href="fichiers/attestation-stage-1.pdf" target="_blank" class="btn btn-doc btn-doc-outline">
-                        <i class="fas fa-file-signature"></i> Attestation Stage 1
-                    </a>
+                <div class="competence-fichiers">
+                    <a href="fichiers/Configuration_Serveur_Windows_2008R2.pdf" target="_blank" class="fichier-lien">Configuration_Serveur_Windows_2008R2</a>
                 </div>
             </div>
-        </div>
+
+            <div class="competence-bloc">
+                <h3 class="competence-titre">Répondre aux incidents & demandes</h3>
+                <ul class="competence-liste">
+                    <li><i class="fas fa-caret-right"></i> Collecter, suivre et orienter des demandes</li>
+                    <li><i class="fas fa-caret-right"></i> Traiter des demandes concernant les services réseau, système et applicatifs</li>
+                    <li><i class="fas fa-caret-right"></i> Traiter des demandes concernant les applications</li>
+                </ul>
+                
+                <div class="competence-fichiers">
+                    <a href="fichiers/Mise_en_place_EtherChannel.pdf" target="_blank" class="fichier-lien">Mise en place d'EtherChannel</a>
+                    <a href="fichiers/Protocole-CHAP-et-VPN.pdf" target="_blank" class="fichier-lien">Protocole-CHAP-et-VPN</a>
+                    <a href="fichiers/Grafana-Loki-Log.pdf" target="_blank" class="fichier-lien">Grafana-Loki-Log</a>
+                    <a href="fichiers/ACL.pdf" target="_blank" class="fichier-lien">ACL</a>
+                </div>
+            </div>
+
+            </div>
     </section>
-
-    <footer>
-        <div class="container text-center">
-            <p>&copy; 2024 Candice Vialette. Portfolio BTS SIO E5.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
