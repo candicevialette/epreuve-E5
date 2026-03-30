@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candice Vialette - Portfolio BTS SIO E5</title>
+    <title>Candice Vialette - Portfolio E5 - BTS SIO</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
@@ -17,8 +17,11 @@
         <div class="container nav-content">
             <ul class="nav-links">
                 <li><a href="#home">Accueil</a></li>
-                <li><a href="#e5">Épreuve E5</a></li>
-                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#patrimoine">Patrimoine</a></li>
+                <li><a href="#incidents">Incidents</a></li>
+                <li><a href="#presence">Présence en ligne</a></li>
+                <li><a href="#projet">Mode projet</a></li>
+                <li><a href="#service" class="active-link">Service info</a></li> <li><a href="#devpro">Développement Pro</a></li>
                 <li><a href="#documents">Dossier Numérique</a></li>
             </ul>
         </div>
@@ -26,12 +29,12 @@
 
     <section id="home" class="hero-section">
         <div class="container hero-content text-center">
-            <img src="images/profil-candice.jpg" alt="Photo de Candice Vialette" class="profil-img">
+            <img src="images/profil-candice.jpg" alt="Candice Vialette" class="profil-img">
             <h1>Candice Vialette</h1>
             <p class="subtitle">Étudiante en système et réseaux</p>
             <div class="action-buttons">
-                <a href="fichiers/candice-synthese.pdf" target="_blank" class="btn btn-primary">Voir Synthèse (PDF)</a>
-                <a href="#realisations" class="btn btn-outline">Voir Projets E5</a>
+                <a href="fichiers/candice-vialette-cv.pdf" target="_blank" class="btn btn-primary">Télécharger mon CV</a>
+                <a href="fichiers/candice-vialette-motivation.pdf" target="_blank" class="btn btn-primary">Télécharger ma lettre</a>
             </div>
             <div class="lang-switch">FR | EN</div>
         </div>
@@ -41,63 +44,93 @@
         <div class="container box-wrapper">
             <h2>Qui suis-je ?</h2>
             <div class="box-body">
-                <p>Je suis une étudiante curieuse et déterminée, et ma première année en BTS SIO a confirmé ma passion naissante pour les systèmes et les réseaux. Ce portfolio numérique est mon support d'audit pour l'épreuve E5.</p>
-                <p>J'ai particulièrement apprécié les aspects pratiques de la formation : concevoir des architectures, déployer des services et sécuriser l'infrastructure.</p>
+                <p>Je suis une étudiante curieuse et déterminée, et ma première année en BTS SIO a confirmé ma passion naissante pour les systèmes et les réseaux. J'ai particulièrement apprécié les aspects pratiques de la formation : concevoir des architectures, déployer des services et sécuriser l'infrastructure.</p>
+                <p>Ce portfolio numérique est mon support d'audit pour l'épreuve E5.</p>
             </div>
         </div>
     </section>
 
-    <section id="e5" class="boxed-content e5-competences">
+    <section id="realisations" class="boxed-content compétences-section">
         <div class="container box-wrapper">
-            <h2>Épreuve E5 (Coef. 4) : Support & Mise à disposition</h2>
+            <h2>Compétences du bloc E5 (Référentiel)</h2>
             <div class="box-body">
-                <p>Cette épreuve valide l'acquisition des compétences clés pour gérer le patrimoine informatique, répondre aux incidents, et mettre à disposition des services numériques performants.</p>
-                
-                <div class="competences-list">
-                    <div class="comp-item"><i class="fas fa-check-circle"></i> Gérer le patrimoine</div>
-                    <div class="comp-item"><i class="fas fa-check-circle"></i> Répondre aux incidents</div>
-                    <div class="comp-item"><i class="fas fa-check-circle"></i> Présence en ligne</div>
-                    <div class="comp-item"><i class="fas fa-check-circle"></i> Travailler en mode projet</div>
-                    <div class="comp-item"><i class="fas fa-check-circle"></i> Mettre à disposition un service</div>
-                    <div class="comp-item"><i class="fas fa-check-circle"></i> Développement professionnel</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="realisations" class="boxed-content realisations-section">
-        <div class="container box-wrapper">
-            <h2>Mes Réalisations Professionnelles (E5)</h2>
-            <div class="box-body">
-                <p>Ces projets documentent mes compétences acquises lors de mes stages et formations. C'est le cœur de l'épreuve technique.</p>
+                <p>Ces projets documentent mes compétences acquises lors de mes stages et formations.</p>
                 
                 <div class="projects-grid">
                     
                     <div class="project-card">
-                        <h3><i class="fas fa-ticket-alt"></i> Ticketing (GLPI)</h3>
+                        <i class="fas fa-server project-icon"></i>
+                        <h3>Gérer le patrimoine</h3>
                         <div class="project-tags">
-                            <span class="tag">Comp. 1</span> <span class="tag">Comp. 2</span> <span class="tag">Comp. 4</span>
+                            <span class="tag">Comp. 1</span> <span class="tag">Stage 1</span>
                         </div>
-                        <p>Installation, configuration et déploiement de GLPI pour la gestion automatisée du parc et des incidents utilisateurs.</p>
+                        <p>Inventaire, maintien opérationnel, sécurité des ressources numériques.</p>
                         <div class="project-links">
-                            <a href="fichiers/doc-glpi-technique.pdf" target="_blank" class="btn btn-project">Dossier Technique (PDF)</a>
-                            <a href="#realisations" class="btn btn-project btn-outline-project">Détails (Ancre)</a>
+                            <a href="fichiers/doc-patrimoine-technique.pdf" target="_blank" class="btn btn-project">Détails Techniques (PDF)</a>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <h3><i class="fas fa-globe"></i> Serveur Web Apache</h3>
+                        <i class="fas fa-ticket-alt project-icon"></i>
+                        <h3>Répondre aux incidents</h3>
                         <div class="project-tags">
-                            <span class="tag">Comp. 3</span> <span class="tag">Comp. 5</span>
+                            <span class="tag">Comp. 2</span> <span class="tag">E5</span>
                         </div>
-                        <p>Installation d'un serveur Web Linux Apache2 avec certificat SSL, BDD MySQL et configuration DNS.</p>
+                        <p>Ticketing, assistance utilisateurs, évolution des services réseau.</p>
                         <div class="project-links">
-                            <a href="fichiers/doc-web-technique.pdf" target="_blank" class="btn btn-project">Dossier Technique (PDF)</a>
-                            <a href="#realisations" class="btn btn-project btn-outline-project">Détails</a>
+                            <a href="fichiers/doc-glpi-technique.pdf" target="_blank" class="btn btn-project">Détails Techniques (PDF)</a>
                         </div>
                     </div>
 
+                    <div class="project-card">
+                        <i class="fas fa-globe project-icon"></i>
+                        <h3>Présence en ligne</h3>
+                        <div class="project-tags">
+                            <span class="tag">Comp. 3</span> <span class="tag">Web</span>
+                        </div>
+                        <p>Développement, configuration web, SEO, certificats SSL.</p>
+                        <div class="project-links">
+                            <a href="fichiers/doc-web-technique.pdf" target="_blank" class="btn btn-project">Détails Techniques (PDF)</a>
+                        </div>
                     </div>
+
+                    <div class="project-card">
+                        <i class="fas fa-tasks project-icon"></i>
+                        <h3>Mode projet</h3>
+                        <div class="project-tags">
+                            <span class="tag">Comp. 4</span> <span class="tag">Travail d'équipe</span>
+                        </div>
+                        <p>Planification, travail en équipe, documentation technique.</p>
+                        <div class="project-links">
+                            <a href="fichiers/doc-projet-technique.pdf" target="_blank" class="btn btn-project">Détails Techniques (PDF)</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <i class="fas fa-user-cog project-icon"></i>
+                        <h3>Mettre à disposition</h3>
+                        <div class="project-tags">
+                            <span class="tag">Comp. 5</span> <span class="tag">Déploiement</span>
+                        </div>
+                        <p>Installation de services, configuration d'outils, VPN, DHCP.</p>
+                        <div class="project-links">
+                            <a href="fichiers/doc-service-technique.pdf" target="_blank" class="btn btn-project">Détails Techniques (PDF)</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <i class="fas fa-graduation-cap project-icon"></i>
+                        <h3>Développement Pro</h3>
+                        <div class="project-tags">
+                            <span class="tag">Comp. 6</span> <span class="tag">Veille</span>
+                        </div>
+                        <p>Formation continue, veille technologique, certifications.</p>
+                        <div class="project-links">
+                            <a href="fichiers/doc-devpro-technique.pdf" target="_blank" class="btn btn-project">Détails Techniques (PDF)</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -106,7 +139,7 @@
         <div class="container box-wrapper">
             <h2>Dossier Numérique Obligatoire</h2>
             <div class="box-body text-center">
-                <p>Accédez aux documents justificatifs de mon parcours de professionnalisation.</p>
+                <p>Accédez aux documents justificatifs pour l'audit de mon épreuve.</p>
                 <div class="docs-btns">
                     <a href="fichiers/tableau-synthese-candice-vialette.pdf" target="_blank" class="btn btn-doc">
                         <i class="fas fa-file-contract"></i> Tableau de Synthèse
@@ -124,7 +157,7 @@
 
     <footer>
         <div class="container text-center">
-            <p>&copy; 2024 Candice Vialette. Portfolio BTS SIO E5 - Support & Mise à disposition.</p>
+            <p>&copy; 2024 Candice Vialette. Portfolio BTS SIO - Épreuve E5.</p>
         </div>
     </footer>
 
