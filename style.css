@@ -1,4 +1,52 @@
-/* --- NOUVEAU STYLE : Blocs Compétences façon Caron (Style Pastel) --- */
+/* --- Variables de Style (Tes couleurs pastelles) --- */
+:root {
+    --bg-color: #f4f1ef;      /* Fond gris très clair pastel */
+    --main-bg: #ffffff;       /* Fond blanc des conteneurs boxed */
+    --accent-vieuxrose: #d1ac9f;  /* Vieux rose pastel */
+    --accent-active: #8ed1c6; /* Vert d'eau pastel (flèches et liens) */
+    
+    --text-primary: #8c7b75;  /* Gris-brun taupe pour ton texte */
+    --text-heading: #6f5d58;  /* Gris-brun plus sombre pour ton nom */
+    
+    --font-heading: 'Playfair Display', serif; /* Polices élégantes */
+    --font-body: 'Montserrat', sans-serif;    
+    
+    --transition: all 0.3s ease;
+}
+
+/* --- Styles de Base --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { background-color: var(--bg-color); color: var(--text-primary); font-family: var(--font-body); line-height: 1.6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+.text-center { text-align: center; }
+
+/* --- Typographie --- */
+h1 { font-family: var(--font-heading); color: var(--text-heading); font-size: 3.8rem; font-weight: 400; margin-bottom: 10px; }
+h2 { font-family: var(--font-body); font-weight: 500; font-size: 1.8rem; color: var(--accent-vieuxrose); margin-bottom: 25px; text-align: center; }
+p { font-size: 1.1rem; color: var(--text-primary); margin-bottom: 20px; }
+
+/* --- Barre de Navigation --- */
+.navbar { position: fixed; top: 0; width: 100%; padding: 20px 0; z-index: 1000; background-color: rgba(244, 241, 239, 0.95); }
+.nav-content { display: flex; justify-content: center; }
+.nav-links { display: flex; gap: 40px; }
+.nav-links a { font-size: 0.9rem; font-weight: 500; text-transform: uppercase; color: var(--text-primary); padding-bottom: 5px; }
+.nav-links a:hover { color: var(--accent-vieuxrose); }
+
+/* --- Section Héros (Accueil) --- */
+.hero-section { height: 100vh; display: flex; justify-content: center; align-items: center; padding-top: 80px; }
+.hero-content { display: flex; flex-direction: column; align-items: center; }
+.profil-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; margin-bottom: 30px; }
+
+/* --- Styles Conteneurs Boxed (Section "Qui suis-je") --- */
+.boxed-content { padding: 40px 0; }
+.box-wrapper { background-color: var(--main-bg); padding: 50px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); max-width: 900px; margin: 0 auto; }
+
+/* ==========================================================
+   NOUVEAU STYLE : Blocs Compétences façon Caron (Style Pastel) 
+   ========================================================== */
 
 .competence-bloc {
     background-color: var(--main-bg); /* Fond blanc */
@@ -6,7 +54,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Ombre très douce */
     border: 1px solid #f0f0f0;
     margin-bottom: 40px;
-    padding: 30px;
+    padding: 40px; /* Espace à l'intérieur de la carte */
     text-align: left;
 }
 
@@ -14,35 +62,36 @@
     color: var(--accent-vieuxrose); /* Ton vieux rose */
     font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #f0f0f0; /* Petite ligne discrète sous le titre */
+    margin-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0; /* Ligne sous le titre */
     padding-bottom: 15px;
+    font-family: var(--font-body);
 }
 
 .competence-liste {
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 30px; /* Espace avant la zone grise */
     padding-left: 10px;
 }
 
 .competence-liste li {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--text-primary);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     display: flex;
     align-items: flex-start;
 }
 
 .competence-liste li i {
-    color: #8ed1c6; /* Ton vert d'eau pastel pour les petites flèches */
+    color: var(--accent-active); /* Ton vert d'eau pastel pour les flèches */
     margin-top: 5px;
-    margin-right: 12px;
-    font-size: 0.9rem;
+    margin-right: 15px;
+    font-size: 1rem;
 }
 
-/* La zone type "gris clair" en bas pour les documents */
+/* La zone gris clair en bas pour les documents (comme sur le site bleu) */
 .competence-fichiers {
-    background-color: #fbf9f8; /* Fond gris/beige très très clair */
+    background-color: #fbf9f8; /* Fond gris/beige très clair */
     border: 1px solid #f0ebe9;
     border-radius: 6px;
     padding: 20px;
@@ -52,15 +101,19 @@
 }
 
 .fichier-lien {
-    font-size: 0.95rem;
-    color: var(--text-primary);
+    font-size: 1rem;
+    color: var(--text-heading);
     text-decoration: none;
     font-family: var(--font-body);
     transition: var(--transition);
     display: block;
+    font-weight: 500;
 }
 
 .fichier-lien:hover {
     color: var(--accent-vieuxrose);
-    padding-left: 5px; /* Petit effet de décalage au survol */
+    padding-left: 8px; /* Petit effet de mouvement au survol */
 }
+
+/* --- Pied de page --- */
+footer { padding: 50px 0 40px 0; margin-top: 40px; text-align: center; }
