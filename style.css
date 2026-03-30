@@ -1,92 +1,66 @@
-/* --- Variables de Style (Fusion : Cadre Épuré + Tes Pastels) --- */
-:root {
-    /* Ta palette pastelle exacte */
-    --bg-color: #f4f1ef;      /* Fond gris très clair pastellisé */
-    --main-bg: #ffffff;       /* Fond blanc des conteneurs boxed */
-    --accent-vieuxrose: #d1ac9f;  /* Vieux rose pastel de tes boutons */
-    --accent-vieuxrose-hover: #c69c8f;
-    --accent-active: #b8e2f2; /* Vert d'eau pastel (pour liens nav) */
-    --tag-bg-pink: #fbf1ef;   /* Vieux rose très clair pour tags */
-    --tag-bg-mint: #e1f5f9;   /* Vert d'eau très clair pour tags */
-    
-    --text-primary: #8c7b75;  /* Gris-brun taupe exact de ton texte */
-    --text-heading: #6f5d58;  /* Gris-brun plus sombre pour ton nom */
-    
-    --font-heading: 'Playfair Display', serif; /* Élégant serif de ton nom */
-    --font-body: 'Montserrat', sans-serif;    /* Clean sans-serif de ton texte */
-    
-    --transition: all 0.3s ease;
-    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+/* --- NOUVEAU STYLE : Blocs Compétences façon Caron (Style Pastel) --- */
+
+.competence-bloc {
+    background-color: var(--main-bg); /* Fond blanc */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Ombre très douce */
+    border: 1px solid #f0f0f0;
+    margin-bottom: 40px;
+    padding: 30px;
+    text-align: left;
 }
 
-/* --- Styles de Base (One-page, Épuré) --- */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body { background-color: var(--bg-color); color: var(--text-primary); font-family: var(--font-body); line-height: 1.6; }
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-a { text-decoration: none; color: inherit; transition: var(--transition); }
-ul { list-style: none; }
-.text-center { text-align: center; }
-.text-justified { text-align: justify; }
+.competence-titre {
+    color: var(--accent-vieuxrose); /* Ton vieux rose */
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0; /* Petite ligne discrète sous le titre */
+    padding-bottom: 15px;
+}
 
-/* --- Typographie (Ton Style Exact) --- */
-h1 { font-family: var(--font-heading); color: var(--text-heading); font-size: 3.8rem; font-weight: 400; margin-bottom: 10px; }
-h2 { font-family: var(--font-body); font-weight: 500; font-size: 1.8rem; color: var(--accent-vieuxrose); text-transform: none; margin-bottom: 25px; text-align: center; }
-h3 { font-family: var(--font-body); font-weight: 600; font-size: 1.3rem; color: var(--text-heading); margin-bottom: 15px; }
-p { font-size: 1.1rem; color: var(--text-primary); margin-bottom: 20px; }
-.subtitle { font-size: 1.2rem; font-weight: 300; font-style: italic; color: var(--text-primary); margin-bottom: 30px; }
+.competence-liste {
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
 
-/* --- Barre de Navigation Pastelle (Reprise de image_4.png) --- */
-.navbar { position: fixed; top: 0; width: 100%; padding: 20px 0; z-index: 1000; background-color: rgba(244, 241, 239, 0.95); }
-.nav-content { display: flex; justify-content: center; }
-.nav-links { display: flex; gap: 40px; }
-.nav-links a { font-size: 0.9rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--text-primary); padding-bottom: 5px; }
-.nav-links a:hover { color: var(--accent-vieuxrose); }
-.nav-links a:active, .nav-links a.active { color: var(--accent-active); border-bottom: 2px solid var(--accent-active); }
+.competence-liste li {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
 
-/* --- Section Héros (Ton Style Centré) --- */
-.hero-section { height: 100vh; display: flex; justify-content: center; align-items: center; padding-top: 80px; }
-.hero-content { display: flex; flex-direction: column; align-items: center; }
-.profil-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: var(--shadow-soft); margin-bottom: 30px; }
-.lang-switch { font-size: 0.8rem; color: #a0a0a0; margin-top: 10px; }
+.competence-liste li i {
+    color: #8ed1c6; /* Ton vert d'eau pastel pour les petites flèches */
+    margin-top: 5px;
+    margin-right: 12px;
+    font-size: 0.9rem;
+}
 
-/* --- Styles Conteneurs Boxed (Cadre de Caron + Ta Pastelle) --- */
-.boxed-content { padding: 40px 0; }
-.box-wrapper { background-color: var(--main-bg); padding: 50px; border-radius: 12px; box-shadow: var(--shadow-soft); max-width: 900px; margin: 0 auto; }
-.box-body p:last-child { margin-bottom: 0; }
+/* La zone type "gris clair" en bas pour les documents */
+.competence-fichiers {
+    background-color: #fbf9f8; /* Fond gris/beige très très clair */
+    border: 1px solid #f0ebe9;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-/* --- Grille de Comptes Rendus (La Grille de Projets, sans boutons d'année) --- */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; text-align: center; }
-.project-card { background-color: #fcfcfc; padding: 30px; border-radius: 10px; border: 1px solid #f0f0f0; transition: var(--transition); display: flex; flex-direction: column; }
-.project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
-.project-card p { font-size: 1rem; color: #777; flex-grow: 1; text-align: left; margin-bottom: 15px; }
-.project-icon { font-size: 2.2rem; color: var(--accent-vieuxrose); margin-bottom: 15px; } /* Icônes pastels */
-.project-tags { display: flex; justify-content: center; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
-.tag { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; }
-.tag-pink { color: var(--accent-vieuxrose); background-color: var(--tag-bg-pink); }
-.tag-mint { color: #5fb4c4; background-color: var(--tag-bg-mint); }
+.fichier-lien {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: var(--font-body);
+    transition: var(--transition);
+    display: block;
+}
 
-/* Liens de Projet Pastels Vieux Rose */
-.project-links { margin-top: auto; padding-top: 20px; border-top: 1px solid #f0f0f0; }
-.btn-project { padding: 8px 15px; font-size: 0.85rem; text-transform: none; font-weight: 500; border-radius: 5px; font-family: var(--font-body); }
-.btn-project-vieuxrose { background-color: var(--accent-vieuxrose); color: #fff; }
-.btn-project-vieuxrose:hover { background-color: var(--accent-vieuxrose-hover); }
-
-/* --- Section Dossier (Tableau Synthèse) --- */
-.docs-btns { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
-.btn-doc { padding: 12px 25px; font-size: 0.95rem; text-transform: none; font-weight: 500; border-radius: 5px; font-family: var(--font-body); }
-.btn-doc-outline { background-color: #f8f8f8; color: #777; border: 1px solid #e0e0e0; }
-.btn-doc-outline:hover { background-color: var(--accent-vieuxrose); color: #fff; border-color: var(--accent-vieuxrose); }
-
-/* --- Pied de page (Ton Style Exact) --- */
-footer { padding: 50px 0 40px 0; margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.03); background-color: var(--main-bg); }
-footer p { font-size: 0.9rem; color: rgba(140, 123, 117, 0.7); margin-bottom: 0; }
-
-/* --- Responsive (Mobile) --- */
-@media (max-width: 768px) {
-    h1 { font-size: 2.8rem; }
-    .subtitle { font-size: 1rem; }
-    .box-wrapper { padding: 30px; }
-    .projects-grid { grid-template-columns: 1fr; }
-    .nav-links { display: none; } /* Cache le menu sur mobile */
+.fichier-lien:hover {
+    color: var(--accent-vieuxrose);
+    padding-left: 5px; /* Petit effet de décalage au survol */
 }
